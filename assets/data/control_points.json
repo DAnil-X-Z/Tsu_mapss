@@ -1,0 +1,41 @@
+{
+  "name": "tsu_campus_control_points_v1",
+  "description": "Опорные точки и связи для калибровки walkable-сетки под дорожки кампуса ТГУ",
+  "points": [
+    { "id": "north_center", "x": 0.50, "y": 0.12 },
+    { "id": "north_west", "x": 0.30, "y": 0.20 },
+    { "id": "north_east", "x": 0.70, "y": 0.20 },
+    { "id": "campus_center", "x": 0.50, "y": 0.44 },
+    { "id": "campus_west", "x": 0.26, "y": 0.46 },
+    { "id": "campus_east", "x": 0.74, "y": 0.46 },
+    { "id": "circle_center", "x": 0.50, "y": 0.69 },
+    { "id": "circle_north", "x": 0.50, "y": 0.62 },
+    { "id": "circle_south", "x": 0.50, "y": 0.78 },
+    { "id": "circle_west", "x": 0.38, "y": 0.69 },
+    { "id": "circle_east", "x": 0.62, "y": 0.69 },
+    { "id": "south_west", "x": 0.34, "y": 0.93 },
+    { "id": "south_east", "x": 0.66, "y": 0.93 },
+    { "id": "grove_west", "x": 0.27, "y": 0.78 },
+    { "id": "grove_east", "x": 0.73, "y": 0.78 }
+  ],
+  "paths": [
+    ["north_center", "campus_center"],
+    ["north_west", "campus_west"],
+    ["north_east", "campus_east"],
+    ["campus_west", "campus_center"],
+    ["campus_center", "campus_east"],
+    ["campus_center", "circle_north"],
+    ["circle_north", "circle_center"],
+    ["circle_center", "circle_south"],
+    ["circle_center", "circle_west"],
+    ["circle_center", "circle_east"],
+    ["circle_north", "grove_west"],
+    ["circle_north", "grove_east"],
+    ["circle_south", "south_west"],
+    ["circle_south", "south_east"],
+    ["circle_west", "grove_west"],
+    ["circle_east", "grove_east"],
+    ["grove_west", "south_west"],
+    ["grove_east", "south_east"]
+  ]
+}
